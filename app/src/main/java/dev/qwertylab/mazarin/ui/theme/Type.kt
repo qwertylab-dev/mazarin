@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.starry.myne.ui.theme
+package dev.qwertylab.mazarin.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.PlatformTextStyle
@@ -25,7 +25,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.sp
-import com.starry.myne.R
+import dev.qwertylab.mazarin.R
 
 
 val poppinsFont = FontFamily(
@@ -78,7 +78,45 @@ val poppinsFont = FontFamily(
     )
 )
 
-val pacificoFont = FontFamily(Font(R.font.pacifico_regular))
+val playfairFont = FontFamily(
+    fonts = listOf(
+        Font(
+            resId = R.font.playfair_regular,
+            weight = FontWeight.Normal,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.playfair_medium,
+            weight = FontWeight.Medium,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.playfair_semibold,
+            weight = FontWeight.SemiBold,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.playfair_bold,
+            weight = FontWeight.Bold,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.playfair_extrabold,
+            weight = FontWeight.ExtraBold,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.playfair_black,
+            weight = FontWeight.Black,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.playfair_italic,
+            weight = FontWeight.Normal,
+            style = FontStyle.Italic
+        ),
+    )
+)
 
 // Set of Material typography styles to start with
 val Typography = Typography(

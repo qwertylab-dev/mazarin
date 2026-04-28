@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.starry.myne.ui.theme
+package dev.qwertylab.mazarin.ui.theme
 
 import android.content.Context
 import android.os.Build
@@ -33,8 +33,8 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import com.starry.myne.ui.screens.settings.viewmodels.SettingsViewModel
-import com.starry.myne.ui.screens.settings.viewmodels.ThemeMode
+import dev.qwertylab.mazarin.ui.screens.settings.viewmodels.SettingsViewModel
+import dev.qwertylab.mazarin.ui.screens.settings.viewmodels.ThemeMode
 
 private val lightColors = lightColorScheme(
     primary = primaryLight,
@@ -176,13 +176,13 @@ fun AdjustEdgeToEdge(activity: AppCompatActivity, themeState: ThemeMode) {
 
 
 /**
- * MyneTheme composable function to apply the theme to the app.
+ * MazarinTheme composable function to apply the theme to the app.
  * @param darkTheme: Boolean to check if the theme is dark.
  * @param settingsViewModel: SettingsViewModel to observe the theme settings.
  * @param content: @Composable function to apply the theme to the content.
  */
 @Composable
-fun MyneTheme(
+fun MazarinTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     settingsViewModel: SettingsViewModel,
     content: @Composable () -> Unit

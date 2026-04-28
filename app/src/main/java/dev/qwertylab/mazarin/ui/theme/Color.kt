@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.starry.myne.ui.theme
+package dev.qwertylab.mazarin.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
