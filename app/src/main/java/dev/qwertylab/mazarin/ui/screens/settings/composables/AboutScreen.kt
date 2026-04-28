@@ -67,7 +67,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
-import coil.request.ImageRequest
 import dev.qwertylab.mazarin.BuildConfig
 import dev.qwertylab.mazarin.R
 import dev.qwertylab.mazarin.helpers.Constants
@@ -325,22 +324,8 @@ private fun DeveloperCard(context: Context) {
                 .padding(12.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            AsyncImage(
-                model = ImageRequest.Builder(LocalContext.current)
-                    .data("https://avatars.githubusercontent.com/u/58552395")
-                    .error(R.drawable.github_pfp).build(),
-                modifier = Modifier
-                    .padding(start = 12.dp)
-                    .size(85.dp)
-                    .clip(CircleShape),
-                contentDescription = null,
-                contentScale = ContentScale.Crop
-            )
-
             Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start = 14.dp)
+                modifier = Modifier.fillMaxWidth()
             ) {
                 Text(
                     text = stringResource(id = R.string.dev_name),
