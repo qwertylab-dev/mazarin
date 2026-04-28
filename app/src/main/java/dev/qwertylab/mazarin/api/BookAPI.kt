@@ -50,6 +50,10 @@ import kotlin.coroutines.suspendCoroutine
  */
 class BookAPI(context: Context, private val preferenceUtil: PreferenceUtil) {
 
+    // TODO: This is upstream Myne's private proxy backend (run by Starry Shivam).
+    //  All search queries and book metadata go through it. Replace with a
+    //  QwertyLab-controlled backend or with direct Project Gutenberg APIs
+    //  before any public release of Mazarin.
     private val baseApiUrl = "https://myne.abyx.in/books"
     private val googleBooksUrl = "https://www.googleapis.com/books/v1/volumes"
 
