@@ -1,46 +1,46 @@
 # Roadmap
 
-## Fase 1 — Identidad (rebrand)
+## Phase 1 — Identity (rebrand)
 
-- [x] Definir nombre de la app → **Mazarin**
-- [x] Cambiar package ID → `dev.qwertylab.mazarin`
-- [ ] Nuevo icono y logo
-- [ ] Actualizar splash screen con nuevo branding
-- [x] Actualizar pantalla About (links, créditos, descripción)
-- [x] Reemplazar/eliminar API key de Google Books hardcodeada
-- [x] Cambiar `applicationId`, `versionName`, `versionCode`
+- [x] Define app name → **Mazarin**
+- [x] Change package ID → `dev.qwertylab.mazarin`
+- [ ] New icon and logo
+- [ ] Update splash screen with new branding
+- [x] Update About screen (links, credits, description)
+- [x] Replace/remove hardcoded Google Books API key
+- [x] Change `applicationId`, `versionName`, `versionCode`
 
-## Fase 2 — Limpieza de código
+## Phase 2 — Code cleanup
 
-- [ ] Migrar todo de Material 2 a Material 3 (eliminar dependencia `compose-material`)
-- [x] Limpiar warnings de deprecación en `gradle.properties`
-- [x] Verificar `.gitignore` (local.properties, keys, builds)
-- [ ] Eliminar código muerto o comentado
-- [ ] Revisar y limpiar strings hardcodeados (preparar para i18n)
+- [ ] Migrate everything from Material 2 to Material 3 (drop `compose-material` dependency)
+- [x] Clean up deprecation warnings in `gradle.properties`
+- [x] Verify `.gitignore` (local.properties, keys, builds)
+- [ ] Remove dead or commented-out code
+- [ ] Review and clean hardcoded strings (prepare for i18n)
 
-## Fase 3 — Mejoras del lector
+## Phase 3 — Reader improvements
 
-- [ ] Temas de lectura (claro, sepia, oscuro, AMOLED negro)
-- [ ] Sistema de bookmarks/marcadores con persistencia en Room
-- [ ] Búsqueda de texto dentro del libro
-- [ ] Slider de progreso mejorado (saltar a posición dentro del capítulo)
-- [ ] Gesto de brillo (deslizar lado izquierdo)
-- [ ] Orientación de pantalla configurable (auto, portrait, landscape)
+- [ ] Reading themes (light, sepia, dark, AMOLED black)
+- [ ] Bookmarks system with Room persistence
+- [ ] In-book text search
+- [ ] Improved progress slider (jump to position within chapter)
+- [ ] Brightness gesture (swipe on left edge)
+- [ ] Configurable screen orientation (auto, portrait, landscape)
 
-## Fase 4 — Features nuevos
+## Phase 4 — New features
 
-- [ ] Anotaciones y highlights (subrayar + guardar notas en Room)
-- [ ] TTS (text-to-speech) con controles de reproducción
-- [ ] Diccionario integrado (tap en palabra → definición)
-- [ ] Soporte PDF
-- [ ] Estadísticas de lectura (tiempo leído, páginas por día, racha)
-- [ ] Importar desde más fuentes (Open Library, Standard Ebooks, Internet Archive)
+- [ ] Annotations and highlights (highlight + save notes in Room)
+- [ ] TTS (text-to-speech) with playback controls
+- [ ] Built-in dictionary (tap a word → definition)
+- [ ] PDF support
+- [ ] Reading stats (time read, pages per day, streaks)
+- [ ] Import from more sources (Open Library, Standard Ebooks, Internet Archive)
 
-## Fase 5 — Play Store
+## Phase 5 — Play Store
 
-- [ ] Crear cuenta de desarrollador en Google Play ($25)
-- [x] Redactar política de privacidad
-- [ ] Completar cuestionario de clasificación de contenido
-- [ ] Preparar screenshots y ficha de la app (título, descripción, gráficos)
-- [ ] Primer release en Play Store
-- [ ] Configurar CI/CD para builds automáticos (GitHub Actions)
+- [ ] Create Google Play developer account ($25)
+- [x] Draft privacy policy
+- [ ] Complete content rating questionnaire
+- [ ] Prepare screenshots and store listing (title, description, graphics)
+- [ ] First Play Store release
+- [ ] Set up CI/CD for automated builds (GitHub Actions)
